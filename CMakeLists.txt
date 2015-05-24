@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 2.6)
+project(NemoHide NONE)
+find_package(Gettext REQUIRED)
+
+configure_file(extension/nemo-hide.py extension/nemo-hide.py)
+
+gettext_create_translations(po/nemo-hide.pot ALL po/pt.po po/fr.po)
+
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/extension/nemo-hide.py" DESTINATION /usr/share/nemo-python/extensions)
+
+# Uninstall target
+configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/cmake_uninstall.cmake.in"
+               "${CMAKE_CURRENT_BINARY_DIR}/cmake/cmake_uninstall.cmake" IMMEDIATE @ONLY)
+add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake/cmake_uninstall.cmake)
