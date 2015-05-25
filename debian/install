@@ -1,0 +1,4 @@
+debian/tmp/usr/share/locale
+/data/nemo-hide-notification /usr/share/nemo-hide/
+/src/nemo-hide.py /usr/share/nemo-hide/
+

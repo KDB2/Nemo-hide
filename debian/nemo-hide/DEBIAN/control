@@ -1,0 +1,9 @@
+Package: nemo-hide
+Version: 1.0.0
+Architecture: all
+Maintainer: Emmanuel C. <>
+Installed-Size: 70
+Depends: nemo (>= 1), python-nemo (>= 1.0)
+Section: gnome
+Priority: extra
+Description: Context menu hide extension for Nemo file manager. Simple context menu file hidding extension for Nemo 2.4 and above. Hidding is performed by the use of a .hidden file enabling hidding of files and folders without renaming them.
