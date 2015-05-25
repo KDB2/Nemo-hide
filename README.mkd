@@ -12,7 +12,7 @@ the Free Software Foundation, either version 3 of the License, or (at your optio
 
 
 Description
-=============
+-----------
 
 Nemo Hide is a simple Python extension for the Nemo file manager that
 adds options to the right-click menu to hide or unhide files.
