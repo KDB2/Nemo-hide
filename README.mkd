@@ -50,6 +50,8 @@ Installation
 ------------
 
 dpkg-buildpackage
+
 cd ..
+
 sudo dpkg -i *.deb
 
