@@ -1,6 +1,0 @@
-Name: Nemo Hide Extension requires restarting Nemo
-Priority: High
-Terminal: False
-DontShowAfterReboot: True
-DisplayIf: pgrep nemo
-Description: Nemo Hide Extension has been installed. Restart of Nemo is needed to make it work properly (hint: 'nemo -q' in terminal). Or if you prefer, a session restart will be more than enough. After restart, a new option will emerge in Nemo context menu. This option lets you hide selected files or folders without renaming them (no extra '.' or '~' added).

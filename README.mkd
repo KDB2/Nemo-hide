@@ -1,7 +1,7 @@
 Nemo Hide
 =============
 
-Extension for Nemo to hide files without renaming them 
+Extension for Nemo to hide files without renaming them. 
 
 Adapted from Nautilus Hide Copyright (C) 2015 Bruno Nova <brunomb.nova@gmail.com> https://bitbucket.org/brunonova/nautilus-hide/src#clone
 
@@ -44,3 +44,12 @@ This extension simply uses that `.hidden` file to hide files. When you choose to
 hide a file, its name is added to the folder's `.hidden` file. When you choose
 to unhide it, the name is removed.
 You will have to refresh the folder to see the result.
+
+
+Installation
+------------
+
+dpkg-buildpackage
+cd ..
+sudo dpkg -i *.deb
+
