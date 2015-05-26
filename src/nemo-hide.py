@@ -120,7 +120,7 @@ class NemoHide(Nemo.MenuProvider, GObject.GObject):
 				with open(hidden_path, "w") as f:
 					for file in hidden:
 						f.write(file + '\n')
-			# Nemo should be refreshed here. But how to do that?
+						os.system("xte 'keydown Control_L' 'key R' 'keyup Control_L'")#refresh of Nemo
 		except:
 			print("Failed to delete or write to {}!".format(hidden_path))
 
