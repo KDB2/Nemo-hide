@@ -16,7 +16,15 @@
 
 import os
 from gi.repository import Nemo, GObject
-from gettext import ngettext, locale, bindtextdomain, textdomain
+
+from gettext import ngettext,  bindtextdomain, textdomain
+
+try:
+	# python 3.8
+	from gettext import locale
+except ImportError:
+	# python 3.9
+	import locale
 
 class NemoHide(Nemo.MenuProvider, GObject.GObject):
 	"""Simple Nemo extension that adds some actions to the context menu to
